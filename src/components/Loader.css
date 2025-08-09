@@ -1,0 +1,44 @@
+.loader {
+  background-color: #8a9a5b; /* maslinasta */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.loader-inner {
+  display: flex;
+  gap: 15px;
+}
+
+.scissors {
+  width: 60px;
+  height: 60px;
+  animation: scissorsMove 1.5s infinite ease-in-out;
+}
+
+.comb {
+  width: 60px;
+  height: 60px;
+  animation: combShake 1.5s infinite ease-in-out;
+}
+
+.loader-text {
+  font-family: "Georgia", serif;
+  font-size: 1.8rem;
+  color: #f5f5dc; /* bež */
+  letter-spacing: 2px;
+}
+
+@keyframes scissorsMove {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(15deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes combShake {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(5px); }
+}

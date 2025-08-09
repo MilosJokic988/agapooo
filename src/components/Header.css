@@ -1,0 +1,46 @@
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030; /* da je iznad ostalog sadržaja */
+}
+
+.navbar {
+  margin-bottom: 0; /* da nema dodatnog margina ispod */
+}
+
+/* Da sadržaj ispod ne bude sakriven iza headera */
+body, main {
+  padding-top: 60px; /* ili visinu tvog headera */
+}
+
+
+.bg-olive {
+  background-color: #8a9a5b; /* maslinasta */
+}
+
+.navbar-brand {
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  color: #f5f5dc !important; /* bež */
+    margin-left: 20px; /* blagi razmak sa leve strane */
+  display: flex;
+ 
+  align-items: center;
+}
+
+.nav-link {
+  color: #f5f5dc !important; /* bež */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+}
+@media (max-width: 576px) {
+  body, main {
+    padding-top: 70px; /* ako je header na telefonu viši, npr zbog hamburger menija */
+  }
+}

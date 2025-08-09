@@ -1,0 +1,59 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fdfcf9; /* nežna bež pozadina */
+  text-align: center;
+  padding: 2rem;
+  color: #444;
+}
+
+.page-container h1 {
+  font-size: 2.5rem;
+  color: #556b2f; /* nežna maslinasta */
+  margin-bottom: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeInDown 0.8s ease;
+}
+
+.page-container p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  animation: fadeInUp 0.8s ease;
+}
+
+.address-link {
+  color: #8a9a5b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.address-link:hover {
+  color: #556b2f;
+  text-decoration: underline;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

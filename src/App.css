@@ -1,0 +1,42 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* uklanja scroll */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;  /* tačno visina ekrana */
+  width: 100vw;
+}
+
+/* Fiksne visine header i footer */
+header {
+  height: 60px;
+  flex-shrink: 0;
+}
+
+footer {
+  height: 50px;
+  flex-shrink: 0;
+}
+
+/* Main zauzima preostali prostor */
+main {
+  flex-grow: 1;
+  overflow-y: auto; /* omogućava scroll samo u main ako je potrebno */
+  width: 100%;
+}
+
+/* Sprečava horizontalni scroll */
+body, #root, main {
+  overflow-x: hidden;
+}
